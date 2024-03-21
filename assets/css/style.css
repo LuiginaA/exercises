@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* font-family: 'Lato', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+
+ul {
+   list-style: none;
+}
+
+
+body {
+   font-family: 'Lato', sans-serif; 
+   background: url(../images/logo.jpg);
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+.header{
+   background: rgba(47, 53, 62, 0.6);
+   background: rgba(234, 234, 234);
+   background: rgba(56, 75, 102, 0.6);
+}
+
+.header_content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 30px;
+   min-height: 60px;
+} 
+
+.logo img {
+  
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+}
+
+
+.logo_img {
+   height: 20px;
+   display: block;
+   column-gap: 10px;
+
+
+
+
+} 
+
+.nav {
+
+} 
+
+
+.nav_list {
+   display: flex;
+   column-gap: 20px;
+
+   align-items: center;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 30px;
+} 
+
+.nav_item {
+   
+} 
+
+
+.nav_link {
+  color: rgba(255, 255 255, 0.75); 
+   color: rgba(225, 255, 0, 0.854);
+  font-size: 15px;
+  font-size: 20px;
+  padding: 7px 14px;
+} 
+
+.nav_link:hover,
+.dropdown:hover .nav_link {
+   color: #fff;
+   color: #000;
+
+   background-color: rgba(255, 255, 255, 0.1); 
+   background-color: rgba(255, 255, 255, 2);
+
+} 
+
+
+.dropdown {
+   position: relative;
+   font-style: 14px;
+}
+
+
+.dropdown:hover .dropdown_list {
+   display: block;
+
+   }
+/* (this could also be as a li if in that sect  eg .dropdown_list li:hover) */
+
+
+.dropdown_list,
+.submenu_list {
+   background: #fff;
+   position: absolute;
+   left: 0;
+   top: 130%;
+   /* (to make the dropdown list to fit under the nav link increase the percentage) */
+   min-width: max-content;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   display: none;
+}
+
+
+.dropdown_item,
+.submenu_item {
+   padding: 10px 15px;
+   cursor: pointer;
+}
+
+
+
+.dropdown_item:hover, 
+.submenu_item:hover {
+    background-color: rgba(234, 234, 234);
+    background-color: rgba(56, 75, 102, 0.6);
+}
+
+
+.dropdown_link {
+   
+}
+
+
+.submenu {
+position: relative;
+}
+
+
+
+.submenu:hover .submenu_list {
+   display: block;
+}
+
+
+/* these can be opened either way by change the directiton as per below one or the other */
+.submenu_list {
+   top: 0;
+   left: 100%;
+} 
+
+
+/* .submenu_list {
+   top: 0;
+   left: initial;
+   right: 100%;
+} */
+
+/*--------------Media queries */
+
+
+@media (max-width: 1470px) {
+   .dropdown_list {
+     left: initial;
+     right: 0;
+   } 
+
+   .submenu_list {  
+       /* This may need to be djusted if on the main nav it opens on the opposite side */
+       left: initial;
+       right: 100%;
+     } 
+/* This adjusts the size: of the dropdown box to accomdate more txt */
+
+}
+
+
+@media (max-width: 650px) {
+   .header_content {
+       flex-direction: column;
+       row-gap: 18px;
+       padding: 25px 0;
+       position: relative;
+   } 
+
+
+   .nav_list { 
+       column-gap: 10px;
+   } 
+
+   
+   .dropdown {
+     position: initial;
+   }
+
+   .dropdown_list {
+       width: 100%;
+       top: 100%;
+       text-align: center;
+   }
+
+   
+   .submenu_list {
+    width: 100%;  
+    top: 100%;
+    left: 0;
+    right: initial;
+   }
+           /* This may need to be djusted if on the main nav it opens on the opposite side */
+}
+
+
+/* carets or arrows  
+&#x25BE; down
+
+&#x25B8; left */
