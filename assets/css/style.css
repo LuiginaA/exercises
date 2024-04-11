@@ -111,15 +111,15 @@ body {
 }
 
 
-.dropdown:hover .dropdown_list {
+.dropdown:hover .dropdown-menu {
    display: block;
 
    }
 /* (this could also be as a li if in that sect  eg .dropdown_list li:hover) */
 
 
-.dropdown_list,
-.submenu_list {
+.dropdown-menu,
+.submenu-menu {
    background: #fff;
    position: absolute;
    left: 0;
@@ -131,22 +131,22 @@ body {
 }
 
 
-.dropdown_item,
-.submenu_item {
+.dropdown-item,
+.submenu-item {
    padding: 10px 15px;
    cursor: pointer;
 }
 
 
 
-.dropdown_item:hover, 
-.submenu_item:hover {
+.dropdown-item:hover, 
+.submenu-item:hover {
     background-color: rgba(234, 234, 234);
     background-color: rgba(56, 75, 102, 0.6);
 }
 
 
-.dropdown_link {
+.dropdown-link {
    
 }
 
@@ -157,19 +157,19 @@ position: relative;
 
 
 
-.submenu:hover .submenu_list {
+.submenu:hover .submenu-menu {
    display: block;
 }
 
 
 /* these can be opened either way by change the directiton as per below one or the other */
-.submenu_list {
+.submenu-menu {
    top: 0;
    left: 100%;
 } 
 
 
-/* .submenu_list {
+/* .submenu-menu {
    top: 0;
    left: initial;
    right: 100%;
@@ -179,12 +179,12 @@ position: relative;
 
 
 @media (max-width: 1470px) {
-   .dropdown_list {
+   .dropdown-menu {
      left: initial;
      right: 0;
    } 
 
-   .submenu_list {  
+   .submenu-menu {  
        /* This may need to be djusted if on the main nav it opens on the opposite side */
        left: initial;
        right: 100%;
@@ -212,14 +212,14 @@ position: relative;
      position: initial;
    }
 
-   .dropdown_list {
+   .dropdown-menu {
        width: 100%;
        top: 100%;
        text-align: center;
    }
 
    
-   .submenu_list {
+   .submenu-menu {
     width: 100%;  
     top: 100%;
     left: 0;
